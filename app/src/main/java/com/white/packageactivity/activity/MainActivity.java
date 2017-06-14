@@ -13,6 +13,6 @@ public class MainActivity extends BaseTitleActivity {
 
     @Override
     protected String getTitleText() {
-        return "这是一个标题";
+        return "标题";
     }
 }
