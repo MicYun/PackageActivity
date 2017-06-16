@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
+import com.white.packageactivity.R;
+
 /**
  * Created by MicYun on 2017/6/2.
  */
@@ -38,7 +40,7 @@ public class BaseActivity extends AppCompatActivity {
     if (null != arguments) {
       newFragment.setArguments(arguments);
     }
-    transaction.replace(0, newFragment);
+    transaction.replace(R.id.fragment_container, newFragment);
 
     if (isAddStack)
       transaction.addToBackStack(null);
@@ -56,6 +58,6 @@ public class BaseActivity extends AppCompatActivity {
   }
 
   protected int getLayoutId() {
-    return 0;
+    return R.layout.base_fragment_activity;
   }
 }

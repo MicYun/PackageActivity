@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.white.packageactivity.view.LoadingView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loading_view_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/page_loading_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <include layout="@layout/whale_spring_loading_view"/>
+
+        <TextView
+            android:id="@+id/loading_text"
+            style="@style/BlackShadowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:singleLine="true"
+            android:textColor="@color/ac_ffffff"
+            android:textSize="13sp"
+            android:text="@string/base_default_loading"/>
+    </LinearLayout>
+
+</com.white.packageactivity.view.LoadingView>
